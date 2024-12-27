@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/cutome.css">
+    <title>Food Delivery Concept</title>
+</head>
+<body>
+    <div class="container-fluid bg-white border-bottom border-2 position-fixed z-3 top-0">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-8 flex align-items-center">
+                    <img src="img/Logo.svg" alt="">
+                </div>
+                <div class="col-4 d-flex gap-3 align-items-center justify-content-end">
+                            <div class="d-none d-md-block">
+                                <a href="#"><img src="img/person.svg" alt=""></a>
+                                <span class="text-body-secondary fw-semibold"><a href="#">Login</a></span>
+                            </div>
+                            <div class="d-none d-md-block">
+                                <a href="#"><img src="img/cart.svg" alt=""></a>
+                                <span class="text-body-secondary fw-semibold">0</span>
+                            </div>
+                            <div class="my-auto click-btn">
+                                <div class="open-btn" onclick="openMenu()"><img src="img/ic-menu-navigation.svg" style="width: 15px;" class="mx-auto my-auto d-block three-lines" alt=""></div>
+                                <div class="close-btn" onclick="closeMenu()">
+                                    <img src="img/ic-menu-navigation (2).svg" style="width: 25px;" class="mx-auto my-auto d-block cancel-clg" alt="">
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container special-m">
+        <div class="row my-4 d-flex flex-column flex-md-row">
+            <div class="col order-2 order-md-1 d-flex flex-column justify-content-center">
+                <h1 class="title-h py-2 my-3 my-md-4 my-lg-5 text-black-50 fw-normal text-center text-md-start">Your Food court at home</h1>
+                <div class="row d-flex my-3 my-md-4 my-lg-5">
+                    <div class="col px-1 d-flex justify-content-end justify-content-md-start">
+                        <button class="btn h-btn"><b>Delivery</b> <br> Order in</button>
+                    </div>
+                    <div class="col px-1">
+                        <button class="btn h-btn"><b>Takeout</b><br>Grab and go</button>
+                    </div>
+                    <div class="col d-none d-lg-block"></div>
+                </div>
+            </div>
+            <div class="col order-1 order-md-2 position-relative" style="max-width: 100%;">
+                <div><img src="img/Photo-plate.png" width="100%" alt=""></div>
+                <div class="d-none d-sm-block curcola d-none d-sm-block"><img src="img/rucola-png.png" width="100%" alt=""></div>
+                <div class="d-none d-sm-block p-desc"><img src="img/Photo-description.png" width="100%" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid px-0 mb-4">
+            <div class="xyz px-2">
+                <div class="d-flex justify-content-end flex-column flex-md-row me-1 ms-lg-5 gap-2">
+                    <div class="d-flex opt-cls gap-2 align-items-center py-2">
+                        <img src="img/time-eat.png" width="40px" height="40px"  alt="">
+                        <p class="ps-3 m-0">
+                            delivery in all paris in less than 30 minutes
+                        </p>
+                    </div>
+                    <div class="d-flex opt-cls gap-2 align-items-center py-2">
+                        <img src="img/delivery.png" width="40px" height="40px"  alt="">
+                        <p class="ps-3 m-0">
+                            Free delivery from 29 euros
+                        </p>
+                    </div>
+                    <div class="d-flex opt-cls gap-2 align-items-center py-2">
+                        <img src="img/paris.png" width="40px" height="40px"  alt="">
+                        <p class="ps-3 m-0">
+                            Only fresh and French products
+                        </p>
+                    </div>
+                </div> 
+        </div>
+    </div>
+    <div class="container">
+        <div class="d-flex flex-wrap justify-content-between mt-5 mb-3">
+             <div>
+                   <h2 class="text-body-secondary fw-normal" style="letter-spacing: 2px;">Restaurants</h2>
+              </div>
+            <div><button class="btn btn-secondary show-btn text-body-secondary">Show All</button></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="my-slider">
+            <div>
+                <img src="img/restaurant.png" width="100%" height="100%" alt="">
+            </div>
+            <div>
+                <img src="img/restaurant (2).png" width="100%" height="100%" alt="">
+            </div>
+            <div>
+                <img src="img/restaurant (3).png" width="100%" height="100%" alt="">
+            </div>
+            <div>
+                <img src="img/restaurant (4).png" width="100%" height="100%" alt="">
+            </div>
+            <div>
+                <img src="img/restaurant (2).png" width="100%" height="100%" alt="">
+            </div>
+            <div>
+                <img src="img/restaurant (3).png" width="100%" height="100%" alt="">
+            </div>
+            <div>
+                <img src="img/restaurant (4).png" width="100%" height="100%" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="special-bg">
+        <div class="container">
+            <div class="row email-box">
+                <div class="col-12 col-md-6">
+                    <h2 class="text-body-secondary fw-normal mb-3" style="letter-spacing: 2px;">Your nearest restaurants</h2>
+                    <p class="text-body-secondary">Each kitchen works with its own delivery area to deliver food to you as soon as possible</p>
+                </div>
+                <div class="col-1 d-none d-md-block"></div>
+                <div class="col-12 col-md-5 d-flex flex-wrap">
+                    <div class="inp-box mb-2 position-relative">
+                        <input placeholder="Enter delivery address" type="text"> 
+                        <img class="position-absolute text-body-tertiary" src="img/location.svg" style="top: 11px; left: 7px;" alt="">
+                    </div> 
+                    <button class="send-btn">Send</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="d-flex flex-wrap justify-content-between mt-5 mb-3">
+             <div>
+                   <h2 class="text-body-secondary fw-normal" style="letter-spacing: 2px;">Specialities</h2>
+              </div>
+            <div><button class="btn btn-secondary show-btn text-body-secondary">Show All</button></div>
+        </div>
+    </div>
+    <div class="container-fluid" id="special-le">
+        <div class="container">
+            <div class="s-box">
+                <div class="circle">
+                    <div class="r-cir">
+                        <p class="text-center pt-4 fs-2 fw-bold">1</p>
+                        <div class="r-cir-2"></div>
+                    </div>
+                    <p class="text-center text-body-secondary mb-0 fw-bold">kitchen</p>
+                </div>
+                <div class="circle">
+                    <div class="r-cir">
+                        <p class="text-center pt-4 fs-2 fw-bold">11</p>
+                        <div class="r-cir-2"></div>
+                    </div>
+                    <p class="text-center text-body-secondary mb-0 fw-bold">Specialist</p>
+                </div>
+                <div class="circle">
+                    <div class="r-cir">
+                        <p class="text-center pt-4 fs-2 fw-bold">11</p>
+                        <div class="r-cir-2"></div>
+                    </div>
+                    <p class="text-center text-body-secondary mb-0 fw-bold">Restaurants</p>
+                </div>
+                <div class="circle">
+                    <div class="r-cir">
+                        <p class="text-center pt-4 fs-2 fw-bold">1</p>
+                        <div class="r-cir-2"></div>
+                    </div>
+                    <p class="text-center text-body-secondary mb-0 fw-bold">Transport costs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-md py-4 px-0">
+        <img src="img/Map.png" width="100%" alt="">
+    </div>
+    <div class="container">
+        <div class="d-flex flex-wrap justify-content-between mt-5 mb-3">
+            <div class="mb-2">
+                <h2 class="text-body-secondary fw-normal d-inline" style="letter-spacing: 2px;">#YellowKitchens</h2>
+                <h2 class="text-body-tertiary fw-normal d-inline">in instagram</h2>
+            </div>
+            <div><button class="btn btn-secondary show-btn text-body-secondary">Show All</button></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="slider slid-img">
+            <div class="overflow-hidden">
+                <img src="img/Rectangle 10.png" width="100%" alt="">
+            </div>
+            <div class="overflow-hidden">
+                <img src="img/Rectangle 11.png" width="100%" alt="">
+            </div>
+            <div class="overflow-hidden">
+                <img src="img/Rectangle 12.png" width="100%" alt="">
+            </div>
+            <div class="overflow-hidden">
+                <img src="img/Rectangle 13.png" width="100%" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="footer">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12 col-lg-4">
+                    <div class="logo-box">
+                        <img src="img/Logo.png" alt="">
+                    </div>
+                    <div class="d-flex gap-2 my-4">
+                       <a href="#"> <img src="img/app-img1-1.png" alt=""></a>
+                        <a href="#"><img src="img/app-img2-1.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg">
+                    <h3 class="text-white fw-normal fs-4">About Us</h3>
+                    <ul class="footer-list text-white-50 lh-base list-unstyled">
+                        <li><a href="">Concept</a></li>
+                        <li><a href="">Franchise</a></li>
+                        <li><a href="">Business</a></li>
+                        <li><a href="">Restaurant signup</a></li>
+                        <li><a href="">For investors</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-lg">
+                    <h3 class="text-white fw-normal fs-4">Get help</h3>
+                    <ul class="footer-list text-white-50 lh-base list-unstyled">
+                        <li><a href="">Read FAQs</a></li>
+                        <li><a href="">Restaurants</a></li>
+                        <li><a href="">Specialities</a></li>
+                        <li><a href="">Sign up to deliver</a></li>
+                        <li><a href="">English</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3 class="text-white fw-normal fs-4">Contact us</h3>
+                    <ul class="footer-list text-white-50 lh-base list-unstyled">
+                        <li>Yellow kitchen Paris 11</li>
+                        <li>69 avenue de la Republique 75011 Paris</li>
+                        <li>0800 111 126</li>
+                        <li><a href="">contact@yellowkitchens.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row pb-4 d-flex flex-column flex-lg-row justify-content-between">
+                <div class="col-5 col-sm-3 col-md-2 d-flex justify-content-between mb-3">
+                    <img src="img/fb.svg" alt="">
+                    <img src="img/insta.svg" alt="">
+                    <img src="img/twitter.svg" alt="">
+                </div>
+                <div class="col-sm-12 col-md-6 d-flex flex-column flex-sm-row justify-content-between">
+                    <span class="text-light"><a href="">Privacy Policy</a></span>
+                    <span class="text-light"><a href="">Terms</a></span>
+                    <span class="text-white-50">© 2020 Yellow kitchen</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full text-center text-sm grayforclass">
+        Credit by Lucky Vidhani
+    </div>
+    
+    <div class="overlay">
+    </div>
+    <div class="menu-box">
+        <ul class="list-crate">
+            <li class="text-body-secondary">
+               <img src="img/call.svg" alt=""> <span class="fw-bold">0800 111 126</span>
+               <p class="my-0"><small>8:00 - 22:00</small></p>
+            </li>
+            <li class="text-body-secondary">
+                <a href="#">Delivery info</a>
+            </li>
+            <li class="text-body-secondary">
+                <a href="#">About us</a>
+            </li>
+            <li class="text-body-secondary">
+                <a href="#">Restaurants</a>
+            </li>
+            <li class="text-body-secondary">
+                <a href="#">Specialities</a>
+            </li>
+        </ul>
+        <span class="px-5 text-body-secondary"><a href="#">English</a></span>
+    </div>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="https://kit.fontawesome.com/37a8ac2c54.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
